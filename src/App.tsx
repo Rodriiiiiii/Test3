@@ -4,7 +4,7 @@ import { Heart, HeartCrack, Gift as GiftBox, PartyPopper, Stars } from 'lucide-r
 function FloatingHearts() {
   return (
     <div className="fixed inset-0 pointer-events-none">
-      {[...Array(20)].map((_, i) => (
+      {[...Array(35)].map((_, i) => (
         <div
           key={i}
           className="absolute animate-float"
@@ -16,7 +16,7 @@ function FloatingHearts() {
           }}
         >
           <Heart
-            className="text-pink-400 opacity-30"
+            className="text-pink-400 opacity-65"
             style={{
               width: `${20 + Math.random() * 20}px`,
               height: `${20 + Math.random() * 20}px`
@@ -144,7 +144,7 @@ function App() {
             <Heart className="w-16 h-16 text-pink-500 animate-bounce" fill="currentColor" />
             <Heart className="w-16 h-16 text-red-500 animate-pulse" fill="currentColor" />
           </div>
-          <h1 className="text-3xl font-bold text-gray-800 mb-2">Hola Mi Amor</h1>
+          <h1 className="text-3xl font-bold text-gray-800 mb-2">Hola Mayara</h1>
           <h2 className="text-2xl font-bold text-gray-800">¿Quieres ser mi San Valentín?</h2>
           {noCount > 0 && (
             <div className="flex items-center justify-center gap-2 text-pink-600">
