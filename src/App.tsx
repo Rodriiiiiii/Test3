@@ -144,8 +144,8 @@ function App() {
             <Heart className="w-16 h-16 text-pink-500 animate-bounce" fill="currentColor" />
             <Heart className="w-16 h-16 text-red-500 animate-pulse" fill="currentColor" />
           </div>
-          <h1 className="text-3xl font-bold text-gray-800 mb-2">Hola Mayara</h1>
-          <h2 className="text-2xl font-bold text-gray-800">¿Quieres ser mi San Valentín?</h2>
+          <h1 className="text-3xl font-bold text-gray-800 mb-2">Holaa mi amor</h1>
+          <h2 className="text-2xl font-bold text-gray-800">¿Le gustaría a usted ser mi San Valentín ?</h2>
           {noCount > 0 && (
             <div className="flex items-center justify-center gap-2 text-pink-600">
               <HeartCrack className="w-5 h-5" />
