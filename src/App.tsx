@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { Heart, HeartCrack, Gift as GiftBox, PartyPopper, Stars } from 'lucide-react';
+import amorImg from '../img/amor.jpg'; // Importa la imagen
+
+
 
 function FloatingHearts() {
   return (
@@ -102,10 +105,10 @@ function App() {
           
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
             <h1 className="text-4xl font-bold text-red-600 mb-6">
-              ¡Esoooo! ¡Noss vemooooooos! 💑
+              ¡Esoooo! ¡Nos vemooooooos mi amor! 😘💕
             </h1>
             <p className="text-xl text-pink-700 mb-6">
-              Que sea un dia muy bonito ❤️
+              Que sea un dia muy bonito 🌹
             </p>
             {!showGift && (
               <button
@@ -144,8 +147,18 @@ function App() {
             <Heart className="w-16 h-16 text-pink-500 animate-bounce" fill="currentColor" />
             <Heart className="w-16 h-16 text-red-500 animate-pulse" fill="currentColor" />
           </div>
-          <h1 className="text-3xl font-bold text-gray-800 mb-2">Holaa mi amor</h1>
-          <h2 className="text-2xl font-bold text-gray-800">¿Le gustaría a usted ser mi San Valentín ?</h2>
+
+          {/*  Aquí agregué la imagen */}
+          <div className="flex justify-center">
+            <img 
+              src={amorImg} 
+              alt="Foto de amor" 
+              className="w-40 h-40 object-cover rounded-full border-4 border-pink-500 shadow-lg"
+            />
+          </div>
+
+          <h1 className="text-3xl font-bold text-gray-800 mb-2">Holaaa mi amor</h1>
+          <h2 className="text-2xl font-bold text-gray-800">¿Le gustaría ser mi San Valentín ?</h2>
           {noCount > 0 && (
             <div className="flex items-center justify-center gap-2 text-pink-600">
               <HeartCrack className="w-5 h-5" />
